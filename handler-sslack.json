@@ -1,0 +1,10 @@
+{
+  "handlers": {
+    "sslack": {
+      "type": "pipe",
+      "command": "SLACK_API_TOKEN=\"YOUR TOKEN HERE\" /opt/sensu/embedded/bin/handler-sslack.py",
+      "timeout": 10,
+      "filters": [ "occurrences", "refresh" ]
+    }
+  }
+}
